@@ -14,6 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let array = ["A","B","C","D"]
+        array.bt_forEach { (item, index) in
+            BTSHelp.log(String(index) + ":" + item)
+        }
+        
+        
         return true
     }
 
