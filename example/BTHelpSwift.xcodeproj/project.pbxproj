@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181282F7263BAF80002E27A9 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181282F6263BAF80002E27A9 /* Test.swift */; };
 		1875A56A263813F30030FD7D /* BTSHelpExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875A568263813F30030FD7D /* BTSHelpExtension.swift */; };
 		1875A56B263813F30030FD7D /* BTSHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875A569263813F30030FD7D /* BTSHelp.swift */; };
 		18F8B6982636BBD800C1C49F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8B6972636BBD800C1C49F /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181282F6263BAF80002E27A9 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		1875A568263813F30030FD7D /* BTSHelpExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTSHelpExtension.swift; sourceTree = "<group>"; };
 		1875A569263813F30030FD7D /* BTSHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTSHelp.swift; sourceTree = "<group>"; };
 		18F8B6942636BBD800C1C49F /* BTHelpSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTHelpSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181282F5263BAF71002E27A9 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				181282F6263BAF80002E27A9 /* Test.swift */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		1875A567263813F30030FD7D /* class */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +80,7 @@
 		18F8B6962636BBD800C1C49F /* BTHelpSwift */ = {
 			isa = PBXGroup;
 			children = (
+				181282F5263BAF71002E27A9 /* test */,
 				1875A567263813F30030FD7D /* class */,
 				18F8B6972636BBD800C1C49F /* AppDelegate.swift */,
 				18F8B6992636BBD800C1C49F /* SceneDelegate.swift */,
@@ -157,6 +168,7 @@
 				18F8B69C2636BBD800C1C49F /* ViewController.swift in Sources */,
 				18F8B6982636BBD800C1C49F /* AppDelegate.swift in Sources */,
 				18F8B69A2636BBD800C1C49F /* SceneDelegate.swift in Sources */,
+				181282F7263BAF80002E27A9 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
