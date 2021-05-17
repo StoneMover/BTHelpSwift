@@ -81,4 +81,12 @@ class BTSHelp: NSObject {
         log(content, nil)
     }
     
+    
+    //根据NSDate获取每月的天数
+    public static func getMonthDay(_ date : NSDate) ->Int{
+        let calender = NSCalendar.init(calendarIdentifier: .gregorian)
+        let range = calender?.range(of: .day, in: .month, for: date as Date)
+        return range?.length ?? 0
+    }
+    
 }

@@ -14,3 +14,15 @@ import UIKit
     
     
 }
+
+
+//MARK:方法传递引用类型参数
+func autoAddGroup(_ groupArray : inout Array<String>) -> Void {
+    groupArray.append("test")
+}
+
+//调用
+func testAutoAddGroup() -> Void {
+    var array = Array<String>.init()
+    autoAddGroup(&array)
+}
