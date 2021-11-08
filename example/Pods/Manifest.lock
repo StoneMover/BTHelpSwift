@@ -1,0 +1,21 @@
+PODS:
+  - BTHelp (0.4.5)
+  - BTWidgetView (0.4.4):
+    - BTHelp
+
+DEPENDENCIES:
+  - BTHelp
+  - BTWidgetView
+
+SPEC REPOS:
+  trunk:
+    - BTHelp
+    - BTWidgetView
+
+SPEC CHECKSUMS:
+  BTHelp: de4c42cfcd0dc1e5899a4fe4870fbeed84538bfe
+  BTWidgetView: e380b283da07faad90959da821d828e6875bf1c0
+
+PODFILE CHECKSUM: 2e01b77e670dffdec70a02b1ffc5746ce9f5de59
+
+COCOAPODS: 1.10.1

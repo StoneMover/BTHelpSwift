@@ -6,9 +6,41 @@
 //
 
 import UIKit
+import BTHelp
+import BTWidgetView
+
+public func bt_rgb(_ r : CGFloat,_ g : CGFloat,_ b : CGFloat)->UIColor{
+    return UIColor.bt_R(r, g: g, b: b)
+}
+
+public func bt_rgba(_ r : CGFloat,_ g : CGFloat,_ b : CGFloat, _ a : CGFloat)->UIColor{
+    return UIColor.bt_R(r, g: g, b: b, a: a)
+}
+
+public func bt_rgb(_ rgb : CGFloat) ->UIColor{
+    return UIColor.bt_RGBSame(rgb)
+}
+
+public func bt_rgba(_ rgb : CGFloat,_ a : CGFloat)->UIColor{
+    return UIColor.bt_RGBASame(rgb, a: a)
+}
+
+///16进制颜色转换
+public func bt_color(str : String) ->UIColor{
+    return UIColor.bt_color(withHexString: str)
+}
+
+public func bt_autoFont(_ fontSize : CGFloat,_ weight : UIFont.Weight)->UIFont{
+    return UIFont.btAutoFont(withSize: fontSize, weight: weight)
+}
+
+public func bt_autoFont(_ fontSize : CGFloat)->UIFont{
+    return UIFont.btAutoFont(withSize: fontSize, weight: .regular)
+}
 
 
-//MARK:通知
+
+//MARK: 通知
 public func bt_addNotification(_ observer: Any, _ selector: Selector, _ name: String, _ object: Any?)->Void{
     NotificationCenter.default.addObserver(observer, selector: selector, name: Notification.Name(name), object: object)
 }
